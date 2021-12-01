@@ -1,0 +1,56 @@
+.dowload {
+    margin-bottom: 63px;
+    &-main {
+        display: flex;
+        flex-wrap: unset;
+    }
+    &-introduce {
+    }
+    &-image {
+        padding: 0 5px;
+    }
+    &-img {
+        width: 100%;
+        object-fit: cover;
+    }
+    &-logo {
+        margin-bottom: 18px;
+        width: 343px;
+    }
+    &-heading {
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 37px;
+        color: var(--heading-color);
+        text-transform: uppercase;
+        margin-bottom: 25px;
+    }
+    &-place {
+        margin: 24px 0;
+        display: flex;
+    }
+    &-qr {
+        max-width: calc(100% / 3);
+        padding: 12px;
+        border: 1px solid rgba($color: #000000, $alpha: 0.09);
+    }
+    &-app {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: 0 28px;
+    }
+    &-link {
+        flex-basis: 505;
+        max-width: 50%;
+        padding: 12px;
+    }
+@media screen and (max-width: 1023px) {
+    &-main {
+        flex-wrap: wrap;
+    }
+    &-qr {
+        display: none;
+    }
+}
+}

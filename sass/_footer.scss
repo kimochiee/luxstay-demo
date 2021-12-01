@@ -1,0 +1,103 @@
+.footer {
+    &-header {
+        padding-bottom: 48px;
+        border-bottom: 1px solid rgba($color: #000000, $alpha: 0.09);
+    }
+    //footer-container
+    &-container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 46px;
+    }
+    //first-column
+    &-logo {
+        margin-bottom: 20px;
+    }
+    &-messenger {
+        display: flex;
+        margin-bottom: 28px;
+        align-items: center;
+    }
+    .messenger-link,
+    .call-link {
+        margin-left: 7px;
+    }
+    .messenger-heading,
+    .call-heading {
+        font-size: 14px;
+        font-weight: 900;
+        line-height: 21px;
+        text-align: justify;
+    }
+    .messenger-dsc,
+    .call-dsc {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 21px;
+        color: var(--text-color);
+    }
+    &-call {
+        display: flex;
+        align-items: center;
+    }
+    //column 2-3-4
+    &-item,
+    &-dsc {
+        display: flex;
+        flex-direction: column;
+    }
+    &-heading {
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 17.5px;
+    }
+    &-dsc {
+        color: #222;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 32px;
+    }
+    &-dsc:hover {
+        color: var(--primary-color);
+    }
+    //column 5
+    &-dowload {
+        display: flex;
+        align-items: center;
+    }
+    &-qr {
+        width: 82px;
+        padding: 12px;
+        border: 1px solid rgba($color: #000000, $alpha: 0.09);
+        margin-right: 28px;
+    }
+    &-app {
+        display: flex;
+        flex-direction: column;
+        gap: 18px 0;
+    }
+    &-app img {
+        max-width: 100px;
+    }
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    &-container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 60px;
+    }
+}
+    //footer-bottom
+    &-bottom {
+        padding: 19px 0 25px;
+    }
+    &-bottom--dsc {
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 21px;
+        color: #999;
+        text-align: center;
+        margin-top: 6px;
+    }
+}   

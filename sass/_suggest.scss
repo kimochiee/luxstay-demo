@@ -1,0 +1,70 @@
+.suggest {
+    margin-bottom: 100px;
+    &-header {
+        margin-bottom: 34px;
+    }
+    &-heading {
+        margin-bottom: 8px;
+    }
+    &-item:hover {
+        color: var(--primary-color);
+        cursor: pointer;
+    }
+    &-img {
+        border-radius: 3px;
+        margin-bottom: 12px;
+        object-fit: cover;
+    }
+    &-title {
+        margin-bottom: 8px;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    //slide
+    .slick-initialized .slick-slide {
+        margin: 0 6px;
+    }
+    .slick-arrow {
+        position: absolute;
+        top: 32%;
+        transform: translateY(-50%);
+        z-index: 5;
+        background-color: #fff;
+        box-shadow: 0 0 7px -4px #000;
+        border-radius: 100rem;
+        border: none;
+        outline: none;
+        width: 56px;
+        height: 56px;
+        transition: all .3s ease-in-out;
+    }
+    .slick-arrow i {
+        font-size: 25px;
+        font-weight: 300;
+        transition: all .2s ease-in-out;
+    }
+    .slick-prev {
+        left: -0.5%;
+        transition: all .2s ease-in-out;
+    }
+    .slick-next {
+        right: -0.5%;
+        transition: all .2s ease-in-out;
+    }
+    .slick-next:not(.slick-disabled):hover,
+    .slick-prev:not(.slick-disabled):hover {
+        border: none;
+        outline: none;
+        box-shadow: 0 0 5px 0 rgba(246, 94, 57, 0.5);
+    }
+    .slick-next:not(.slick-disabled):hover i,
+    .slick-prev:not(.slick-disabled):hover i {
+        color: rgba(246, 94, 57, 0.5);
+    }
+    .slick-disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+}

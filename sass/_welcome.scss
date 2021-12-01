@@ -1,0 +1,16 @@
+.welcome {
+    margin-bottom: 36px;
+    &-heading {
+        margin-bottom: 12px;
+    }
+    &-dsc {
+        margin-bottom: 6px;
+    }
+    .auth-link {
+        color: var(--text-color);
+        text-decoration: underline;
+    }
+    .auth-link:hover {
+        color: var(--primary-color);
+    }
+}

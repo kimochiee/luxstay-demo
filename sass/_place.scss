@@ -1,0 +1,99 @@
+.place {
+    margin-bottom: 56px;
+    &-header {
+        margin-bottom: 16px;
+    }
+    &-heading {
+        margin-bottom: 8px;
+    }
+    &-item {
+        height: 300px;
+        width: 240px;
+        position: relative;
+        cursor: pointer;
+        transition: all linear 0.1s;
+    }
+    &-item:hover {
+        transform: translateY(-1px);
+    }
+    &-img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+        transition: all linear 0.1s;
+    }
+    &-img:hover ~ &-content {
+        color: var(--primary-color);
+    }
+    &-content {
+        position: absolute;
+        bottom: 30px;
+        left: 25px;
+        color: #fff;
+    }
+    &-city {
+        font-size: 24px;
+        text-transform: capitalize;
+    }
+    &-booking {
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 300;
+    }
+    &-number {
+        font-weight: bold;
+    }
+    //slide
+    .slick-initialized .slick-slide {
+        margin: 0 8px;
+    }
+    .slick-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 5;
+        background-color: #fff;
+        box-shadow: 0 0 7px -4px #000;
+        border-radius: 100rem;
+        border: none;
+        outline: none;
+        width: 56px;
+        height: 56px;
+        transition: all .3s ease-in-out;
+    }
+    .slick-arrow i {
+        font-size: 25px;
+        font-weight: 300;
+        transition: all .2s ease-in-out;
+    }
+    .slick-prev {
+        left: -0.5%;
+        transition: all .2s ease-in-out;
+    }
+    .slick-next {
+        right: -0.5%;
+        transition: all .2s ease-in-out;
+    }
+    .slick-next:not(.slick-disabled):hover,
+    .slick-prev:not(.slick-disabled):hover {
+        border: none;
+        outline: none;
+        box-shadow: 0 0 5px 0 rgba(246, 94, 57, 0.5);
+    }
+    .slick-next:not(.slick-disabled):hover i,
+    .slick-prev:not(.slick-disabled):hover i {
+        color: rgba(246, 94, 57, 0.5);
+    }
+    .slick-disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+    }
+    //reponsive 
+    @media screen and (max-width: 767px) {
+        &-item {
+            height: 192px;
+            width: 154px;
+        }
+    }
+}
